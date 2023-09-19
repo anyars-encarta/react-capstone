@@ -1,5 +1,5 @@
 // Continents.js
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom'; // Import useHistory
@@ -99,7 +99,7 @@ function Continents() {
           </div>
         ))}
       </div>
-      <Countries continentName={selectedContinent} showCountries={showCountries} />
+      {showCountries && <Countries continentName={selectedContinent} />}
     </>
   );
 }
