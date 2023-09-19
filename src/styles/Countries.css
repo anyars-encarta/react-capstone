@@ -28,6 +28,9 @@
   box-sizing: border-box;
 }
 
+.country-name {
+  font-size: 30px;
+}
 /* .country:nth-child(4n-1),
 .country:nth-child(4n-2) {
   background-color:rgba(225, 73, 132);
@@ -42,4 +45,7 @@
   border-radius: 50px;
   padding: 5px;
   width: 70%;
+  background-color: rgba(225, 73, 132, 0.75);
+  border: 2px solid white;
+  color: white;
 }

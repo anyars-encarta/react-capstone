@@ -18,6 +18,7 @@ function Countries() {
     totalRecoveries: 0,
     totalDeaths: 0,
   });
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,6 +60,17 @@ function Countries() {
 
   const formatNumber = (number) => number.toLocaleString();
 
+  const handleSearchInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const filteredCountries = continentName
+    ? countries.list.filter(
+      (country) => country.continent === continentName
+          && country.country.toLowerCase().includes(searchQuery.toLowerCase()),
+    )
+    : [];
+
   if (countries.loading) {
     return <div>Loading...</div>; // Handle loading state
   }
@@ -98,32 +110,77 @@ function Countries() {
           </p>
         </div>
         <div className="search-container">
-          <input type="text" id="text" placeholder="Search countries..." />
+          <input
+            type="text"
+            id="text"
+            placeholder="Search countries..."
+            value={searchQuery}
+            onChange={handleSearchInputChange}
+          />
           <FontAwesomeIcon icon={faCircleRight} className="arrow-right" />
         </div>
       </div>
       <p className="continent-stats">COUNTRIES STATS</p>
       <div className="country-container">
-        {continentName ? (
-          countries.list
-            .filter((country) => country.continent === continentName)
-            .map((country) => (
-              <div key={country.country} className="country">
-                <div className="overlay" />
-                <div className="info">
-                  <p className="country-name">{country.country}</p>
-                  <p className="cases-count">
-                    Cases:
-                    {' '}
-                    {formatNumber(country.cases)}
-                  </p>
-                </div>
-                <FontAwesomeIcon icon={faCircleRight} className="view-more" />
-              </div>
-            ))
-        ) : (
-          <div />
-        )}
+        {filteredCountries.map((country) => (
+          <div key={country.country} className="country">
+            <div className="overlay" />
+            <div className="info">
+              <p className="country-name">{country.country}</p>
+              <p className="cases-count">
+                Cases:
+                {' '}
+                {formatNumber(country.cases)}
+              </p>
+              <p className="recovery-count">
+                Recovered:
+                {' '}
+                {formatNumber(country.recovered)}
+              </p>
+              <p className="deaths-count">
+                Deaths:
+                {' '}
+                {formatNumber(country.deaths)}
+              </p>
+              <p className="active-count">
+                Active:
+                {' '}
+                {formatNumber(country.active)}
+              </p>
+              <p className="today-count">
+                Today&apos;s Cases:
+                {' '}
+                {formatNumber(country.todayCases)}
+              </p>
+              <p className="today-death-count">
+                Today&apos;s Deaths:
+                {' '}
+                {formatNumber(country.todayDeaths)}
+              </p>
+              <p className="today-recv-count">
+                Today&apos;s Recovery:
+                {' '}
+                {formatNumber(country.todayRecovered)}
+              </p>
+              <p className="critical-count">
+                Critical:
+                {' '}
+                {formatNumber(country.critical)}
+              </p>
+              <p className="tests-count">
+                Tests:
+                {' '}
+                {formatNumber(country.tests)}
+              </p>
+              <p className="population-count">
+                Population:
+                {' '}
+                {formatNumber(country.population)}
+              </p>
+            </div>
+            <FontAwesomeIcon icon={faCircleRight} className="view-more" />
+          </div>
+        ))}
       </div>
     </>
   );
