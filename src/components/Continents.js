@@ -5,7 +5,6 @@ import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom'; // Import useHistory
 import Countries from './Countries';
 import ContinentMap from './ContinentMap';
-
 import '../styles/Continents.css';
 
 function Continents() {
