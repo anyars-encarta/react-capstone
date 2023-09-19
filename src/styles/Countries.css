@@ -1,4 +1,45 @@
 .top-stats .continental {
-    margin: 0;
-    font-size: 40px;
-  }
+  margin: 0;
+  font-size: 40px;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(225, 73, 132, 0.75);
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: right;
+  width: 50%;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(225, 73, 132, 0.75)), url('../assets/coronavirus-ikages.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .country:nth-child(4n-1),
+.country:nth-child(4n-2) {
+  background-color:rgba(225, 73, 132);
+} */
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#text {
+  border-radius: 50px;
+  padding: 5px;
+  width: 70%;
+}

@@ -1,14 +1,17 @@
 // Continents.js
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom'; // Import useHistory
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router-dom'; // Import useHistory
+import { setContinents, selectContinents } from '../redux/continentsSlice';
 import Countries from './Countries';
 import ContinentMap from './ContinentMap';
 import '../styles/Continents.css';
 
 function Continents() {
-  const [continents, setContinents] = useState([]);
+  const dispatch = useDispatch();
+  const continents = useSelector(selectContinents);
   const [selectedContinent, setSelectedContinent] = useState(null);
   const [showCountries, setShowCountries] = useState(false);
 
@@ -23,14 +26,14 @@ function Continents() {
       try {
         const response = await fetch('https://corona.lmao.ninja/v2/continents');
         const data = await response.json();
-        setContinents(data);
+        dispatch(setContinents(data)); // Dispatch the action to set continents
       } catch (error) {
         throw new Error('Error fetching data:', error);
       }
     };
 
     fetchData();
-  }, []);
+  }, [dispatch]);
 
   continents.forEach((continent) => {
     totalCases += parseInt(continent.cases, 10);
