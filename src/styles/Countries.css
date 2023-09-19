@@ -16,7 +16,7 @@
   flex-direction: row;
   justify-content: space-between;
   justify-content: right;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   color: white;
   background-image: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(225, 73, 132, 0.75)), url('../assets/coronavirus-ikages.jpg');
@@ -31,10 +31,6 @@
 .country-name {
   font-size: 30px;
 }
-/* .country:nth-child(4n-1),
-.country:nth-child(4n-2) {
-  background-color:rgba(225, 73, 132);
-} */
 
 .search-container {
   display: flex;
