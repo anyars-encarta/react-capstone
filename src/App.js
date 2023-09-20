@@ -8,8 +8,10 @@ const App = () => (
   <Router>
     <Navbar />
     <Switch>
-      <Route exact path="/" component={Continents} />
       <Route path="/countries/:continentName" component={Countries} />
+      <Route path="/">
+        <Continents />
+      </Route>
     </Switch>
   </Router>
 );
