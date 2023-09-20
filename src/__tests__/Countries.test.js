@@ -4,7 +4,7 @@ import { MemoryRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import '@testing-library/jest-dom/extend-expect'; // For expect(...).toBeInTheDocument()
+import '@testing-library/jest-dom/extend-expect';
 import Countries from '../components/Countries';
 
 const middlewares = [thunk];
@@ -17,7 +17,6 @@ describe('Countries Integration Test', () => {
     store = mockStore({
       countries: {
         list: [
-          // Mock your countries data here
           {
             country: 'Country1',
             continent: 'ContinentName',
@@ -46,7 +45,6 @@ describe('Countries Integration Test', () => {
             tests: 2000,
             population: 2000000,
           },
-          // Add more mock data as needed
         ],
         loading: false,
         error: null,
@@ -70,7 +68,6 @@ describe('Countries Integration Test', () => {
       </Provider>,
     );
 
-    // Assert that the component has rendered correctly
     expect(screen.getByText('Stats for ContinentName')).toBeInTheDocument();
     expect(screen.getByText('Cases: 300')).toBeInTheDocument();
     expect(screen.getByText('Recoveries: 150')).toBeInTheDocument();
@@ -90,16 +87,12 @@ describe('Countries Integration Test', () => {
       </Provider>,
     );
 
-    // Enter search query
     const searchInput = screen.getByPlaceholderText('Search countries...');
     fireEvent.change(searchInput, { target: { value: 'Country1' } });
 
-    // Assert that only Country1 is displayed
     expect(screen.getByText('Country1')).toBeInTheDocument();
     expect(screen.queryByText('Country2')).not.toBeInTheDocument();
   });
-
-  // Add more integration tests as needed
 
   it('should match snapshot', () => {
     const { asFragment } = render(

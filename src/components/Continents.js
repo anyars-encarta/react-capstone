@@ -1,7 +1,6 @@
-// Continents.js
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom'; // Import useHistory
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { setContinents, selectContinents } from '../redux/continentsSlice';
@@ -15,7 +14,7 @@ function Continents() {
   const [selectedContinent, setSelectedContinent] = useState(null);
   const [showCountries, setShowCountries] = useState(false);
 
-  const history = useHistory(); // Use the useHistory hook
+  const history = useHistory();
 
   let totalCases = 0;
   let totalRecoveries = 0;
@@ -26,7 +25,7 @@ function Continents() {
       try {
         const response = await fetch('https://corona.lmao.ninja/v2/continents');
         const data = await response.json();
-        dispatch(setContinents(data)); // Dispatch the action to set continents
+        dispatch(setContinents(data));
       } catch (error) {
         throw new Error('Error fetching data:', error);
       }
@@ -82,11 +81,10 @@ function Continents() {
             className="continent"
             style={{ backgroundImage: `url(${ContinentMap[continent.continent]})` }}
             onClick={() => handleContinentClick(continent.continent)}
-            role="button" // Add role="button" for accessibility
-            tabIndex="0" // Add tabIndex to make it focusable
+            role="button"
+            tabIndex="0"
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
-                // Handle Enter key press
                 handleContinentClick(continent.continent);
               }
             }}

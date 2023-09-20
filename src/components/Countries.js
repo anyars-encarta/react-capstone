@@ -7,6 +7,7 @@ import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import {
   setCountries, selectCountries, setError, setLoading,
 } from '../redux/countriesSlice';
+import ContinentMap from './ContinentMap';
 import '../styles/Countries.css';
 
 function Countries() {
@@ -38,9 +39,7 @@ function Countries() {
   }, [dispatch]);
 
   useEffect(() => {
-    // Check if countries is an array before filtering
     if (Array.isArray(countries.list)) {
-      // Calculate continent-specific stats
       const continentStatsData = countries.list
         .filter((country) => country.continent === continentName);
       const continentStatsResult = continentStatsData.reduce((stats, country) => ({
@@ -72,7 +71,7 @@ function Countries() {
     : [];
 
   if (countries.loading) {
-    return <div>Loading...</div>; // Handle loading state
+    return <div>Loading...</div>;
   }
 
   if (countries.error) {
@@ -81,7 +80,7 @@ function Countries() {
         Error:
         {countries.error}
       </div>
-    ); // Handle error state
+    );
   }
 
   return (

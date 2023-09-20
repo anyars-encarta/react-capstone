@@ -1,4 +1,3 @@
-// continentsSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const continentsSlice = createSlice({
