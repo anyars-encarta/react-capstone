@@ -120,7 +120,7 @@ function Countries() {
           <FontAwesomeIcon icon={faCircleRight} className="arrow-right" />
         </div>
       </div>
-      <p className="continent-stats">COUNTRIES STATS</p>
+      <p className="countries-stats">COUNTRIES STATS</p>
       <div className="country-container">
         {filteredCountries.map((country) => (
           <div key={country.country} className="country">

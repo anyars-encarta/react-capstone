@@ -99,6 +99,16 @@ function Continents() {
                 {' '}
                 {formatNumber(continent.cases)}
               </p>
+              <p className="cases-count">
+                Recoveries:
+                {' '}
+                {formatNumber(continent.recovered)}
+              </p>
+              <p className="cases-count">
+                Deaths:
+                {' '}
+                {formatNumber(continent.deaths)}
+              </p>
             </div>
             <FontAwesomeIcon icon={faCircleRight} className="view-more" />
           </div>
