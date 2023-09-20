@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-capstone/static/css/main.4ca47277.css",
-    "main.js": "/react-capstone/static/js/main.c4441e16.js",
+    "main.js": "/react-capstone/static/js/main.3c4ec94a.js",
     "static/js/787.8e57117c.chunk.js": "/react-capstone/static/js/787.8e57117c.chunk.js",
     "static/media/coronavirus-ikages.jpg": "/react-capstone/static/media/coronavirus-ikages.23b862a6bbbf14fde3aa.jpg",
     "index.html": "/react-capstone/index.html",
     "main.4ca47277.css.map": "/react-capstone/static/css/main.4ca47277.css.map",
-    "main.c4441e16.js.map": "/react-capstone/static/js/main.c4441e16.js.map",
+    "main.3c4ec94a.js.map": "/react-capstone/static/js/main.3c4ec94a.js.map",
     "787.8e57117c.chunk.js.map": "/react-capstone/static/js/787.8e57117c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ca47277.css",
-    "static/js/main.c4441e16.js"
+    "static/js/main.3c4ec94a.js"
   ]
 }
