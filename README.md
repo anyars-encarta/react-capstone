@@ -74,7 +74,7 @@
 
 LIVE DEMO
 
-> Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile
+> Follow this [link](https://anyars-encarta.github.io/react-capstone) to view the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
