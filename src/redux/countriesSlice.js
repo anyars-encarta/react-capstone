@@ -1,4 +1,3 @@
-// countriesSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const countriesSlice = createSlice({

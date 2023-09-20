@@ -4,12 +4,12 @@
 
  <!-- LOGO -->
 
-  <img src="./src/assets/My Logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/coronavirus-ikages.jpg" alt="logo" width="160"  height="auto" />
   <br/>
 
 <!-- MAIN HEADING -->
 
-  <h3><b>Encarta Book Store</b></h3>
+  <h3><b>Global Coronavirus Portal</b></h3>
 
 </div>
 
@@ -20,7 +20,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-<!-- - [🚀 Live Demo](#live-demo) -->
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -37,9 +37,9 @@
 - [📝 License](#license)
 
 <!-- INTRO -->
-# 📖 Encarta Book Store <a name="about-project"></a>
+# 📖 Global Coronavirus Portal<a name="about-project"></a>
 
-> This is a Book Store app designed to manage variety of book collections.
+> This app is a portal where one could get Coronavirus updates based on Continents and countries worldwide.
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
@@ -64,7 +64,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> - Display and Manage Variety of Book Collections
+> - Display Coronavirus statistics based on Continents.
+> - Display Coronavirus statistics for countries based on a selected Continent.
+> - Search for statistics for a specific country.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,8 +85,8 @@ LIVE DEMO
 > To get a local copy of the project, use this link:
 > 
 ```sh
-cd book-store
-https://github.com/anyars-encarta/book-store.git
+cd react-capstone
+https://github.com/anyars-encarta/react-capstone.git
 ```
 
 
@@ -163,7 +165,7 @@ Contributions, issues, and feature requests are welcome!
 <!-- ACKNOWLEDGEMENTS -->
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Special acknowledgement to [@microverseinc](https://github.com/microverseinc)
+> Special credit to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the [author of the original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) on [behance.net](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) used in this project and [microverseinc](https://github.com/microverseinc) for the design materials.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +178,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **What new features should be expected in the next release of the project?**
 
-  - I am currently working on adding **Book Cataloguing features**.
+  - I am currently working on adding **Statistics display for regions based on selected countries.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

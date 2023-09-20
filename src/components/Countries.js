@@ -38,9 +38,7 @@ function Countries() {
   }, [dispatch]);
 
   useEffect(() => {
-    // Check if countries is an array before filtering
     if (Array.isArray(countries.list)) {
-      // Calculate continent-specific stats
       const continentStatsData = countries.list
         .filter((country) => country.continent === continentName);
       const continentStatsResult = continentStatsData.reduce((stats, country) => ({
@@ -72,7 +70,7 @@ function Countries() {
     : [];
 
   if (countries.loading) {
-    return <div>Loading...</div>; // Handle loading state
+    return <div>Loading...</div>;
   }
 
   if (countries.error) {
@@ -81,7 +79,7 @@ function Countries() {
         Error:
         {countries.error}
       </div>
-    ); // Handle error state
+    );
   }
 
   return (
@@ -120,7 +118,7 @@ function Countries() {
           <FontAwesomeIcon icon={faCircleRight} className="arrow-right" />
         </div>
       </div>
-      <p className="continent-stats">COUNTRIES STATS</p>
+      <p className="countries-stats">COUNTRIES STATS</p>
       <div className="country-container">
         {filteredCountries.map((country) => (
           <div key={country.country} className="country">
