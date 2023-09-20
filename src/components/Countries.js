@@ -7,7 +7,6 @@ import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import {
   setCountries, selectCountries, setError, setLoading,
 } from '../redux/countriesSlice';
-import ContinentMap from './ContinentMap';
 import '../styles/Countries.css';
 
 function Countries() {
