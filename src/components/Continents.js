@@ -35,11 +35,13 @@ function Continents() {
     fetchData();
   }, [dispatch]);
 
-  continents.forEach((continent) => {
-    totalCases += parseInt(continent.cases, 10);
-    totalRecoveries += parseInt(continent.recovered, 10);
-    totalDeaths += parseInt(continent.deaths, 10);
-  });
+  if (Array.isArray(continents)) {
+    continents.forEach((continent) => {
+      totalCases += parseInt(continent.cases, 10);
+      totalRecoveries += parseInt(continent.recovered, 10);
+      totalDeaths += parseInt(continent.deaths, 10);
+    });
+  }
 
   const formatNumber = (number) => number.toLocaleString();
 
