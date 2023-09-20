@@ -76,6 +76,8 @@ LIVE DEMO
 
 > Follow this [link](https://anyars-encarta.github.io/react-capstone) to view the project.
 
+> Watch a brief [video](https://www.loom.com/share/698ae7bb727d43de993811e035625996?sid=5acc7fae-0279-4a00-8fb0-c940a522908d) illustration of the app here.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
