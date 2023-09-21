@@ -1,0 +1,57 @@
+.top-stats .continental {
+  margin: 0;
+  font-size: 40px;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(225, 73, 132, 0.75);
+}
+
+.countries-stats {
+  margin: 0;
+  padding: 2px;
+  background-color: #e14984;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: right;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.country:nth-child(4n-1),
+.country:nth-child(4n-3) {
+  background-color: rgba(225, 73, 132); /* Background color for cards 3 and 4 */
+}
+
+.country-name {
+  font-size: 30px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#text {
+  border-radius: 50px;
+  padding: 5px;
+  width: 70%;
+  background-color: rgba(225, 73, 132, 0.75);
+  border: 2px solid white;
+  color: white;
+}

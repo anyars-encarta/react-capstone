@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries Integration Test should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="top-stats"
+  >
+    <div
+      class="top"
+    >
+      <p
+        class="continental"
+      >
+        Stats for ContinentName
+      </p>
+      <p
+        class="count"
+      >
+        Cases: 300
+      </p>
+      <p
+        class="count"
+      >
+        Recoveries: 150
+      </p>
+      <p
+        class="count"
+      >
+        Deaths: 15
+      </p>
+    </div>
+    <div
+      class="search-container"
+    >
+      <input
+        id="text"
+        placeholder="Search countries..."
+        type="text"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-circle-right arrow-right"
+        data-icon="circle-right"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+  <p
+    class="countries-stats"
+  >
+    COUNTRIES STATS
+  </p>
+  <div
+    class="country-container"
+  >
+    <div
+      class="country"
+    >
+      <div
+        class="overlay"
+      />
+      <div
+        class="info"
+      >
+        <p
+          class="country-name"
+        >
+          Country1
+        </p>
+        <p
+          class="cases-count"
+        >
+          Cases: 100
+        </p>
+        <p
+          class="recovery-count"
+        >
+          Recovered: 50
+        </p>
+        <p
+          class="deaths-count"
+        >
+          Deaths: 5
+        </p>
+        <p
+          class="active-count"
+        >
+          Active: 45
+        </p>
+        <p
+          class="today-count"
+        >
+          Today's Cases: 10
+        </p>
+        <p
+          class="today-death-count"
+        >
+          Today's Deaths: 2
+        </p>
+        <p
+          class="today-recv-count"
+        >
+          Today's Recovery: 8
+        </p>
+        <p
+          class="critical-count"
+        >
+          Critical: 3
+        </p>
+        <p
+          class="tests-count"
+        >
+          Tests: 1,000
+        </p>
+        <p
+          class="population-count"
+        >
+          Population: 1,000,000
+        </p>
+      </div>
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-circle-right view-more"
+        data-icon="circle-right"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="country"
+    >
+      <div
+        class="overlay"
+      />
+      <div
+        class="info"
+      >
+        <p
+          class="country-name"
+        >
+          Country2
+        </p>
+        <p
+          class="cases-count"
+        >
+          Cases: 200
+        </p>
+        <p
+          class="recovery-count"
+        >
+          Recovered: 100
+        </p>
+        <p
+          class="deaths-count"
+        >
+          Deaths: 10
+        </p>
+        <p
+          class="active-count"
+        >
+          Active: 90
+        </p>
+        <p
+          class="today-count"
+        >
+          Today's Cases: 20
+        </p>
+        <p
+          class="today-death-count"
+        >
+          Today's Deaths: 4
+        </p>
+        <p
+          class="today-recv-count"
+        >
+          Today's Recovery: 16
+        </p>
+        <p
+          class="critical-count"
+        >
+          Critical: 6
+        </p>
+        <p
+          class="tests-count"
+        >
+          Tests: 2,000
+        </p>
+        <p
+          class="population-count"
+        >
+          Population: 2,000,000
+        </p>
+      </div>
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-circle-right view-more"
+        data-icon="circle-right"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</DocumentFragment>
+`;
