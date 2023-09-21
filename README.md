@@ -145,7 +145,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Book Cataloguing features**
+- [ ] **Statistics display for regions based on selected countries**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +180,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **What new features should be expected in the next release of the project?**
 
-  - I am currently working on adding **Statistics display for regions based on selected countries.
+  - I am currently working on adding Statistics display for regions based on selected countries.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

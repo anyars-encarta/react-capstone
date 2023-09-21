@@ -8,7 +8,7 @@ const Navbar = () => {
   const history = useHistory();
 
   const handleArrowLeftClick = () => {
-    history.push('/');
+    history('/');
   };
 
   const handleArrowLeftKeyDown = (event) => {
