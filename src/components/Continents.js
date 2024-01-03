@@ -22,16 +22,28 @@ function Continents() {
 
   useEffect(() => {
     const fetchData = async () => {
+      const url = 'https://covid-19-coronavirus-statistics2.p.rapidapi.com/continentData';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': 'f46b04882dmshf34baf277a8c927p10223fjsn15de2f5d6d1b',
+          'X-RapidAPI-Host': 'covid-19-coronavirus-statistics2.p.rapidapi.com',
+        },
+      };
+
       try {
-        const response = await fetch('https://corona.lmao.ninja/v2/continents');
-        const data = await response.json();
+        const response = await fetch(url, options);
+        const data = await response.text();
         dispatch(setContinents(data));
       } catch (error) {
         throw new Error('Error fetching data:', error);
       }
     };
 
-    fetchData();
+    fetchData()
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   }, [dispatch]);
 
   if (Array.isArray(continents)) {
