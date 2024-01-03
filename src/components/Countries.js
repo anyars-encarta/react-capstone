@@ -23,7 +23,7 @@ function Countries() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://corona.lmao.ninja/v2/countries');
+        const response = await fetch('https://covid19-update-api.herokuapp.com/api/v1/world/country/:country');
         const data = await response.json();
         dispatch(setCountries(data));
         dispatch(setError(null));
